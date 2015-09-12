@@ -1,0 +1,97 @@
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="test.firstapp.MenuActivity"
+        android:id="@+id/menu">
+
+        <TextView
+            android:text="Welcome Back,"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:paddingTop="15dp"
+            android:id="@+id/title"
+            android:textSize="40dp"
+            android:gravity="center_horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/background"
+            android:background="#9933FF"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal"
+            android:textSize="40dp"
+            android:id="@+id/username"
+            android:text="username"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/background"
+            android:background="#9933FF"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload New Note"
+            android:id="@+id/uploadButton"
+            android:textSize="20dp"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="30dp"
+            android:width="400dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write New Note"
+            android:id="@+id/writeButton"
+            android:textSize="20dp"
+            android:width="400dp"
+            android:layout_below="@+id/uploadButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Notes"
+            android:id="@+id/viewButton"
+            android:textSize="20dp"
+            android:width="400dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/writeButton"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/settingsButton"
+            android:textSize="20dp"
+            android:width="400dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/viewButton"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log  Out"
+            android:textColor="#FF2020"
+            android:id="@+id/logoutButton"
+            android:textSize="20dp"
+            android:width="400dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/settingsButton"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

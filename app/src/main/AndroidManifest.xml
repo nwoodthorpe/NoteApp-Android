@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="projects.noteapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name=".UploadActivity"
+            android:label="@string/title_activity_upload" >
+        </activity>
+        <activity
+            android:name="me.iwf.photopicker.PhotoPickerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="me.iwf.photopicker.PhotoPagerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".WriteActivity"
+            android:label="@string/title_activity_write" >
+        </activity>
+        <activity
+            android:name=".WriteDetailsActivity"
+            android:label="@string/title_activity_write_details" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".ViewActivity"
+            android:label="@string/title_activity_view" >
+        </activity>
+        <activity
+            android:name=".NoteDetailsActivity"
+            android:label="@string/title_activity_note_details"
+            android:parentActivityName=".ViewActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="projects.noteapp.ViewActivity" />
+        </activity>
+        <activity
+            android:name=".ViewTextActivity"
+            android:label="@string/title_activity_view_text" >
+        </activity>
+        <activity
+            android:name=".ViewImageActivity"
+            android:label="@string/title_activity_view_image" >
+        </activity>
+    </application>
+
+</manifest>

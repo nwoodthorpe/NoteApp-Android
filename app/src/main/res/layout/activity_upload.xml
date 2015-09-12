@@ -1,0 +1,117 @@
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="test.firstapp.UploadActivity"
+        android:id="@+id/upload">
+
+        <TextView android:text="Upload New Note" android:layout_width="fill_parent"
+            android:id="@+id/title"
+            android:textSize="40dp"
+            android:gravity="center_horizontal"
+            android:layout_height="80dp"
+            android:paddingTop="15dp"
+            android:background="@color/PINK"
+            android:textColor="@color/background"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Images Selected"
+            android:id="@+id/selectButton"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleBox"
+            android:layout_marginTop="30dp"
+            android:hint="Title"
+            android:singleLine="true"
+            android:layout_below="@+id/selectButton"
+            android:layout_alignRight="@+id/selectButton"
+            android:layout_alignEnd="@+id/selectButton"
+            android:layout_toEndOf="@+id/tagsScroll"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descriptionBox"
+            android:layout_marginTop="30dp"
+            android:hint="Description"
+            android:singleLine="true"
+            android:layout_below="@+id/titleBox"
+            android:layout_alignRight="@+id/titleBox"
+            android:layout_alignEnd="@+id/titleBox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tagsBox"
+            android:layout_marginTop="30dp"
+            android:hint="Tags"
+            android:singleLine="true"
+            android:layout_below="@+id/descriptionBox"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/addButton"
+            android:layout_toStartOf="@+id/addButton"
+            android:layout_marginLeft="16dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:id="@+id/addButton"
+            android:layout_alignTop="@+id/tagsBox"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"/>
+
+        <view
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="projects.noteapp.ScrollViewExtended"
+            android:id="@+id/tagsScroll"
+            android:layout_below="@+id/addButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:id="@+id/uploadButton"
+            android:width="200dp"
+            android:layout_below="@+id/tagsBox"
+            android:layout_marginTop="125dp"
+            android:layout_alignRight="@+id/addButton"
+            android:layout_alignEnd="@+id/addButton"
+            android:layout_toEndOf="@+id/tagsScroll"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp"/>
+
+    </RelativeLayout>
+</ScrollView>
+
